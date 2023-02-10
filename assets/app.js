@@ -3,6 +3,11 @@ let price = document.getElementById("price")
 let store = document.getElementById("store")
 let basket=document.getElementById("basket")
 let count=document.getElementById("count")
+let balance= document.getElementById('balance')
+
+let result = 0;
+
+
 
 basket.addEventListener("click",()=>{
     store.style.display === "none" ?
@@ -12,16 +17,40 @@ basket.addEventListener("click",()=>{
 
 
 if(JSON.parse(localStorage.getItem('cartsCount'))===null){
-    localStorage.setItem('basket',JSON.stringify([]))
+    localStorage.setItem('cartsCount',JSON.stringify([]))
 }
 
-for(let i=0; i<btn.length; i++){
-    btn[i].addEventListener('click',()=>{
-        cartCount()
 
-    })
+for (let i = 0; i <btn.length; i++) {
+    btn[i].addEventListener('mousedown',()=>{
+      
+        result += parseInt(price.innerHTML);
+        // window.globalTotal =result;
+        console.log(result)
+
+    }) 
+
+  }
+
+
+
+
+
+if(result<100){
     
-}
+
+    
+    for(let i=0; i<btn.length; i++){
+        btn[i].addEventListener('click',()=>{
+
+            // result += +(price.innerHTML);
+            // console.log(result)
+            cartCount()
+    
+        }) 
+    }
+
+
 
 function cartCount(){
    let prdCount= localStorage.getItem("cartsCount");
@@ -43,3 +72,9 @@ function displayCart(){
     }
 }
 displayCart();
+
+
+
+}else{
+    alert("balansda kifayyet qeder balans yoxdur")
+}
