@@ -11,10 +11,11 @@
     <title>eFlim</title>
 </head>
 <body>
+<div id="logo"></div>
 
-    <div>
+    <div id="navb">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">eFilm</a>
+            <a class="navbar-brand" href="#" ">eFilm</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,7 +40,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
+                  <a class="nav-link disabled" href="#">100</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -51,8 +52,15 @@
 
             <div class="basket"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
-              </svg></div>
+              </svg>
+			<ul id="ul">
+
+			</ul>
+			
+			</div>
+
           </nav>
+          
     </div>
 
 
@@ -72,7 +80,7 @@
 					<p class="ticket__movie-slogan">
 						More human than human is our motto.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price"></span>28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -87,7 +95,7 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">Justice League</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price"></span>20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -104,7 +112,7 @@
 					<p class="ticket__movie-slogan">
                         Stig Svendsen.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price">28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -119,15 +127,13 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">The Pale Blue Eye-2022</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
 			</div>
 		</div>
-	</div>
 
-    <div class="hero-container">
 		<div class="main-container">
 			<div class="poster-container">
 				<a href="#"><img src="https://img.fullhdfilmizlesene.pw/poster/izle-lg/fullhd-avatar-izle.webp?0.9550416874703249" class="poster" /></a>
@@ -138,7 +144,7 @@
 					<p class="ticket__movie-slogan">
 						More human than human is our motto.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price">28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -153,7 +159,7 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">Başlangıç 2010  </h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -170,7 +176,7 @@
 					<p class="ticket__movie-slogan">
 						More human than human is our motto.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price">28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -185,17 +191,15 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">The Lord of the Rings</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
 			</div>
 		</div>
-	</div>
 
 
 
-    <div class="hero-container">
 		<div class="main-container">
 			<div class="poster-container">
 				<a href="#"><img src="https://img.fullhdfilmizlesene.pw/poster/izle-lg/9bf716ea56b74842ec8f363d27db2f36.webp" class="poster" /></a>
@@ -206,7 +210,7 @@
 					<p class="ticket__movie-slogan">
 						More human than human is our motto.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price">28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -221,7 +225,7 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">The Silence of the Lambs</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -238,7 +242,7 @@
 					<p class="ticket__movie-slogan">
 						More human than human is our motto.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price">28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -253,15 +257,13 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">Saving Private Ryan</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
 			</div>
 		</div>
-	</div>
 
-    <div class="hero-container">
 		<div class="main-container">
 			<div class="poster-container">
 				<a href="#"><img src="https://img.fullhdfilmizlesene.pw/poster/izle-lg/fullhd-siki-dostlar-izlehd.webp" class="poster" /></a>
@@ -272,7 +274,7 @@
 					<p class="ticket__movie-slogan">
 						More human than human is our motto.
 					</p>
-					<p class="ticket__current-price">$28.00</p>
+					<p class="ticket__current-price">$<span id="price">28.00</span></p>
 					<p class="ticket__old-price">$44.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -287,7 +289,7 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">The Departed</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
@@ -304,92 +306,22 @@
 				<div class="ticket__content">
 					<h4 class="ticket__movie-title">Forrest Gump</h4>
 					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
+					<p class="ticket__current-price">$<span id="price">20.75</span></p>
 					<p class="ticket__old-price">$40.99</p>
 					<button class="ticket__buy-btn">Buy now</button>
 				</div>
 			</div>
 		</div>
 
-        <div class="main-container">
-			<div class="poster-container">
-				<a href="#"><img src="https://img.fullhdfilmizlesene.pw/poster/izle-lg/fullhd-trns-3-ayin-karanlik-yuzu-hd-izle.webp" class="poster" /></a>
-			</div>
-			<div class="ticket-container">
-				<div class="ticket__content">
-					<h4 class="ticket__movie-title">Transformers 3</h4>
-					<p class="ticket__movie-slogan">You can't save the world alone.</p>
-					<p class="ticket__current-price">$20.75</p>
-					<p class="ticket__old-price">$40.99</p>
-					<button class="ticket__buy-btn">Buy now</button>
-				</div>
-			</div>
-		</div>
+       
 	</div>
+<div class="upper">
+	<a href="#logo"><span>&#8648;</span></a></div>
 
     <!-- *************************************Footer***************************** -->
-<footer>
+
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <!-- Grid container -->
-        <div class="container pt-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
+  
       
         <!-- Copyright -->
         <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -398,7 +330,7 @@
         </div>
         <!-- Copyright -->
       </footer>
-</footer>
+
 
     <script src="./assets/app.js"></script>
 </body>
