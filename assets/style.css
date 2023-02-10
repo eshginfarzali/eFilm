@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -174,16 +175,84 @@ body {
 }
 
 
-.upper{
+#basket{
+	cursor: pointer;;
+}
+/* .store{
+	display: none ;
+	position: absolute; 
+	right: 0px; 
+	top: 55px; 
+	height: 60vh;
+	width: 30%;
+    z-index: 80000000;
+    color: #000000;
+	background-color: #999;
+	
+
+} */
+.fa-store{
+	color: #353434 !important;
+	padding-left: 20px;
+}
+
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 30px;
+    position: relative;
+}
+.store {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    z-index: 666666;
+    width: 30%;
+    height: 60vh;
+    background-color:#457fb4;
+    display: none;
+	border: 1px solid black;
+	border-radius: 10px;
+} 
+ .store p {
+    width: 90%;
+    height: 50px;
+    margin: 10px 0;
+    background-color: yellow;
+}
+
+i {
+    cursor: pointer;
+}
+
+ sup {
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+} 
+
+#count{
 	position: absolute;
-	right: 20px;
-	bottom: 50px;
-	border-radius: 100%;
-	text-align: center;
-	height: 50px;
-	width: 50px;
-	background-color: #edeef0fc;
-	font-size: 30px;
-	z-index: 700000;
-	position: fixed;
+	top:-10px;
+	right: -15px;
+	color: #457fb4;
 }
