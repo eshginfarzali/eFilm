@@ -20,7 +20,11 @@
 .nav-link {
   color: white !important;
 }
-
+nav{
+	position: fixed !important;
+	width: 100%;
+	z-index: 7777777;
+}
 .navbar {
   display: flex !important;
   justify-content: space-around !important;
