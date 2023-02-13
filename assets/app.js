@@ -171,7 +171,7 @@ function addBasket(e) {
 
   if (!(myBalance >= currentFilm.price)) {
     alert(
-      "Your balance is not enough.\nIf you want to buy other films, please increase your balance in your profile."
+      "Your balance is not enough."
     );
   }
 
