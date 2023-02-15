@@ -138,7 +138,7 @@ if (getLocal("basket") === null) {
 
 basketIcon.addEventListener("click", () => {
   store.style.display === "none"
-    ? (store.style.display = "flex")
+    ? (store.style.display = "flex") (result.style.display = "none")
     : (store.style.display = "none");
 });
 
@@ -259,3 +259,45 @@ function deletedBasket(id) {
 }
 
 filmMountWriter();
+
+
+let input= document.getElementById("input")
+let submit = document.getElementById("search-btn")
+let result= document.getElementById("result")
+
+input.addEventListener("click", () => {
+  result.style.display === "none"
+    ? (result.style.display = "flex") (store.style.display="none")
+    : (result.style.display = "none");
+});
+
+
+
+
+
+
+const searchBtn = document.getElementById("search-btn");
+
+
+
+searchBtn.addEventListener("click", function () {
+  const searchQuery = input.value.toLowerCase();
+
+  if (searchQuery) {
+    const searchResults = movies.filter(function (movie) {
+      return movie.title.toLowerCase().indexOf(searchQuery) !== -1;
+    });
+
+    if (searchResults.length) {
+      result.innerHTML = "";
+
+      searchResults.forEach(function (movie) {
+        const p = document.createElement("p");
+        p.textContent = movie.title;
+        result.appendChild(p);
+      });
+    } else {
+      result.innerHTML = "<p>Sorry, we did not find any results matching this search.</p>";
+    }
+  }
+});
