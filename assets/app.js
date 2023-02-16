@@ -267,37 +267,40 @@ let result= document.getElementById("result")
 
 input.addEventListener("click", () => {
   result.style.display === "none"
-    ? (result.style.display = "flex") (store.style.display="none")
+    ? (result.style.display = "flex") (store.style.display = "none")
     : (result.style.display = "none");
 });
 
 
+if (getLocal("search") === null) {
+  setOne("search", "");
+}
+
+
+input.addEventListener("keyup", writerSearch);
+submit.addEventListener("click", writerSearch);
 
 
 
 
-const searchBtn = document.getElementById("search-btn");
 
-
-
-searchBtn.addEventListener("click", function () {
-  const searchQuery = input.value.toLowerCase();
-
-  if (searchQuery) {
-    const searchResults = movies.filter(function (movie) {
-      return movie.title.toLowerCase().indexOf(searchQuery) !== -1;
-    });
-
-    if (searchResults.length) {
-      result.innerHTML = "";
-
-      searchResults.forEach(function (movie) {
-        const p = document.createElement("p");
-        p.textContent = movie.title;
-        result.appendChild(p);
-      });
-    } else {
-      result.innerHTML = "<p>Sorry, we did not find any results matching this search.</p>";
+function writerSearch() {
+  result.innerHTML = "";
+  let localmovies = getLocal("movies");
+  localmovies.forEach((e) => {
+    let title = e.title.toLowerCase();
+    let inpValue = input.value.toLowerCase();
+  
+    if (
+      title.includes(inpValue) &&
+      inpValue != ""
+    ) {
+     setOne("search", e);
+    let search =getLocal("search");
+      result.innerHTML += `    
+      <p>${search.title}</p>
+      `;
     }
-  }
-});
+  });
+
+}
